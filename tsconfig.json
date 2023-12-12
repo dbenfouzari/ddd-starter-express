@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+      "target": "es2016",
+      "lib": ["ESNext", "DOM"],
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "module": "commonjs",
+      "rootDirs": ["./src", "./test"],
+      "baseUrl": ".",
+      "paths": {
+        "@application/*": ["./src/core/application/*"],
+        "@di/*": ["./src/core/di/*"],
+        "@domain/*": ["./src/core/domain/*"],
+        "@infrastructure/*": ["./src/core/infrastructure/*"],
+        "@shared/*": ["./src/shared/*"],
+        "@auth/*": ["./src/auth/*"]
+      },
+      "types": ["reflect-metadata", "jest"],
+      "resolveJsonModule": true,
+      "outDir": "./dist",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "skipLibCheck": true
+    },
+    "exclude": ["node_modules", "dist", "jest.config.ts"]
+  }
