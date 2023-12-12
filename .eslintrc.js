@@ -15,6 +15,7 @@ module.exports = {
     "plugin:import/typescript",
     "plugin:jsdoc/recommended",
     "plugin:jsdoc/recommended-typescript",
+    "plugin:custom/recommended",
   ],
   overrides: [
     {
@@ -41,7 +42,6 @@ module.exports = {
   },
   plugins: ["@typescript-eslint", "custom"],
   rules: {
-    "custom/prefer-use-logger": "error",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-unused-vars": [
       "warn",
